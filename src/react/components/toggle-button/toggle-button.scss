@@ -1,0 +1,21 @@
+.toggle-button {
+    width: 30px;
+    height: 30px;
+    background-color: #bbb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    cursor: pointer;
+
+    &.active {
+        background-color: var(--primary);
+    }
+
+    $pictos: "bold", "italic", "underline";
+
+    @each $picto in $pictos {
+        &.#{$picto} {
+            background-image: url(../../global/img/pictos/#{$picto}.svg);
+        }
+    }
+}

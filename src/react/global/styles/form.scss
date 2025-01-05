@@ -1,0 +1,28 @@
+input {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+a {
+    color: var(--polytech-light);
+
+    &.no-deco {
+        text-decoration: none;
+        color: unset;
+    }
+}
+
+button {
+    background-color: var(--primary);
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 12px;
+    cursor: pointer;
+}

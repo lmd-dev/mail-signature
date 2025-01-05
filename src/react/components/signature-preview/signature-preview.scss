@@ -1,0 +1,72 @@
+.signature-preview {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        line-height: 150%;
+        color: var(--polytech-grey);
+
+        .empty {
+            min-height: 10px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .dark {
+            color: var(--polytech-dark)
+        }
+
+        .light {
+            color: var(--polytech-light)
+        }
+
+        .black {
+            color: var(--polytech-grey)
+        }
+
+        .name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--polytech-dark);
+        }
+
+        .role {
+            font-weight: bold;
+        }
+
+        .mail {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+            a {
+                text-decoration: none;
+                font-weight: bold;
+
+                
+            }
+        }
+
+        .address {
+            display: inline-block;
+        }
+
+        .logo {
+            margin-top: 10px;
+        }
+    }
+}

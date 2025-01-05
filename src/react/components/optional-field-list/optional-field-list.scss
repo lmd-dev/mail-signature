@@ -1,0 +1,23 @@
+.optional-fields-list {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    box-sizing: border-box;
+
+    & > div {
+        overflow-y: auto;
+    }
+
+    .optional-field-editor {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--primary);
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

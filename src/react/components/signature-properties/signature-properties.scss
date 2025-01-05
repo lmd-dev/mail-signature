@@ -1,0 +1,64 @@
+.signature-properties {
+    display: flex;
+    height: 100%;
+    width: 700px;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+
+        img {
+            width: 250px;
+        }
+    }
+
+    h2 {
+        font-size: 1.1em;
+        text-transform: uppercase;
+
+        margin-top: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--polytech-light);
+    }
+
+    & > .fields {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    }
+
+    .optional-fields-list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    a:last-of-type {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > img {
+            margin-right: 10px;
+        }
+    }
+}
